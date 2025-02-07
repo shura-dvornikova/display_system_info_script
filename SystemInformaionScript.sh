@@ -11,5 +11,5 @@ echo -e "${BLUE_BOLD}Architecture:${NC} ${GREEN}$(uname -m)${NC}"
 echo -e "${BLUE_BOLD}Distribute name:${NC} ${GREEN}$(lsb_release -d | cut -f2)${NC}"
 echo -e "${BLUE_BOLD}Number of cores:${NC} ${GREEN}$(nproc)${NC}"
 echo -e "${BLUE_BOLD}RAM size:${NC} ${GREEN}$(free -h | grep -E "Mem:" | awk '{print "Total:", $2, "Available:", $7}')${NC}"
-echo -e "${BLUE_BOLD}Hard disk capacity:${NC} ${GREEN}$(df -h)${NC}"
+echo -e "${BLUE_BOLD}Hard disk capacity:${NC} ${GREEN}$(df -h | grep '/$')${NC}"
 
