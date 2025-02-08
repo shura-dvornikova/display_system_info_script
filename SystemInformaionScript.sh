@@ -5,7 +5,7 @@ GREEN='\033[0;36m'
 
 NC='\033[0m' #reset color settings
 
-echo -e "${BLUE_BOLD}The operaion system name:${NC} ${GREEN}$(uname)${NC}"
+echo -e "${BLUE_BOLD}The OS name:${NC} ${GREEN}$(uname)${NC}"
 echo -e "${BLUE_BOLD}The kernel version:${NC} ${GREEN}$(uname -r)${NC}"
 echo -e "${BLUE_BOLD}Architecture:${NC} ${GREEN}$(uname -m)${NC}"
 echo -e "${BLUE_BOLD}Distribute name:${NC} ${GREEN}$(lsb_release -d | cut -f2)${NC}"
